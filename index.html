@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DAIRY</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="h.png" type="image/png">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    
+        <a class="navbar-brand " href="#"><i class="fa fa-heart"></i> MY DAIRY </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-home"></i>  HOME <span class="sr-only">(current)</span></a>
+                </li> -->
+
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Title" aria-label="Search" id="searchbtn">
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="srch">Search</button> -->
+            </d>
+        </div>
+    </nav>
+    <audio id="music">
+        <source src="fire.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tone">
+        <source src="tone.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container" id="home">
+
+        <div class="card" id="crd-1">
+            <div class="card-body">
+               
+                <form action="">
+                    <h5 class="card-title"> Write Title  </h5>
+                    <div class="form-group"> 
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" rows="1" required id="title"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h5 class="card-title">write note ..<i class="fa fa-pencil-square-o "></i></h5>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="addtxt" rows="6" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="addbtn">add note</button>
+                    <button class="btn btn-primary" id="remove">Reset all</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="row container-fluid my-3 " id="notes">
+
+    </div>
+
+
+    <footer class="page-footer" id="foot">
+        <div class="footer-copyright text-center">© 2021 Copyright: MY DAIRY
+         <br> <a href="https://arbazkhan123-s.github.io/Arbaz_info/"> Arbaz khan </a>
+        </div>
+        <center class="anch">
+           <a href="mailto:kabz860156@gmail.com" target="_blank">
+            <i class="fa fa-envelope-o"></i>
+           </a>
+           <a href="https://touch.facebook.com/abz.khan.3576?ref=bookmarks" target="_blank"><i class="fa fa-facebook-square"></i></a>
+           <a href="https://www.linkedin.com/in/arbaz-khan-349361186/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          
+           <a href="https://www.instagram.com/abz_khan_/" target="_blank" target="_blank">
+            <i class="fa fa-instagram"></i>
+           </a>
+           </center>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

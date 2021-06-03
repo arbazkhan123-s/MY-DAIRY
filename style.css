@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+#navbar {
+    background-color: rgb(43, 36, 37);
+    height: 70px;
+}
+#navbar a{
+    color: red;
+    font-size: 3rem;
+    font-family: 'Love Ya Like A Sister', cursive;
+
+}
+#searchbtn:hover{
+    border: none;
+    background-color: red;
+}
+#searchbtn{
+    background: none;
+    font-size: 1.2rem;
+    font-family: 'Oxygen';
+    
+    border: 2px solid red;
+}
+#home{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+     border: none; 
+}
+#home h5{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(43, 36, 37);
+    color: red;
+    font-size: 1.6rem;
+    font-family: 'Love Ya Like A Sister';
+    text-transform: uppercase;
+}
+.card{
+    border: none;
+    background: none;
+    width: 50rem;
+    margin: auto;
+}
+.card-body{
+    border: none;
+    background-color: rgb(43, 36, 37);
+    border-radius:8px ;
+    color: wheat;
+    font-family: 'Rubik', sans-serif;
+}
+#home textarea{
+    border: none;
+    background-color: red;
+    color: wheat;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+.card-body button:hover{
+    background-color: red;
+
+}
+.card-body button{
+    background-color: black;
+    color: wheat;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+}
+#home button{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+#notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#notes h5{
+    color: red;
+    font-size: 1.5rem;
+}
+#foot{
+    margin-top: 30rem;
+    font-family: 'rubik';
+}
+#foot a{
+    
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+#foot a:hover{
+    background-color: red;
+
+}
+.crd-2{
+    width: 24rem;
+}
+
+/* ---css for phone -------- */
+ @media screen and (max-width: 500px) {
+     
+#navbar a{
+    font-size: 2rem;
+}
+#searchbtn{
+    font-size: 1rem;
+}
+.card{
+    width: 18rem;
+}
+#home h5{
+    font-size: 1.3rem;
+}
+#home textarea{
+    font-size: .8rem;
+}
+#home button{
+    font-size: 1rem;
+}
+#crd-1{
+    height: 62vh;
+}
+#home{
+    margin-top: 4rem;
+}
+.crd-2{
+    width: 18rem;
+}
+
+
+
+
+ }
