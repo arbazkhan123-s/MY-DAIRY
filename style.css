@@ -119,10 +119,10 @@ html{
     font-size: 1rem;
 }
 .card{
-    width: 18rem;
+    width: 20.5rem;
 }
 #home h5{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 #home textarea{
     font-size: .8rem;
@@ -131,13 +131,13 @@ html{
     font-size: 1rem;
 }
 #crd-1{
-    height: 62vh;
+    height: 59vh;
 }
 #home{
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 .crd-2{
-    width: 18rem;
+    width: 20.5rem;
 }
 
 
