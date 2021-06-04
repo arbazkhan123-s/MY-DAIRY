@@ -50,8 +50,8 @@ function shownotes(element, index) {
                     <h5 class="card-title tbl"> ${element.title}</h5>
                   </div>
                     <p class="card-text">${element.notes}</p>
-                    <button class="btn btn-primary" id="${index}" onclick="dlt(this.id)" >delete note</button>
-                    <button class="btn btn-primary" id="${element.notes}" onclick="imp(this.id)" >Add Important</button>
+                    <button class="btn btn-primary btn-2" id="${index}" onclick="dlt(this.id)" >delete note</button>
+                    <button class="btn btn-primary btn-2" id="${element.notes}" onclick="imp(this.id)" >Add Important</button>
                 </div>
             </div>
         </div>
