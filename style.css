@@ -12,9 +12,9 @@ html{
     height: 70px;
 }
 #navbar a{
-    color: white;
+    color: red;
     font-size: 3rem;
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: cursive;
 
 }
 #searchbtn:hover{
