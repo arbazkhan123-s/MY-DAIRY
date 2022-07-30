@@ -24,16 +24,17 @@ addbtn.addEventListener('click', function (e) {
             notes: addtxt.value,
             title: addtitle.value
         }
+        postApiCall(myobj)
         notesobj.push(myobj)
         localStorage.setItem('notes', JSON.stringify(notesobj));
         addtxt.value = "";
         addtitle.value = "";
+        // getApiCall(myobj.title)
         shownotes();
     }
 })
 function shownotes(element, index) {
     let notes = localStorage.getItem('notes')
-
     if (notes == null) {
         notesobj = [];
     }
@@ -121,3 +122,42 @@ function imp(element) {
 
     })
 }
+
+const postApiCall = async (data) => {
+    console.log('inside api call');
+    JSON.stringify(data)
+    console.log(data);
+    const response = await fetch('https://mynotes12.herokuapp.com/register', {
+      method: 'POST',
+      body:JSON.stringify({
+        notes: data.notes,
+        title: data.title
+      }), // string or object
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    console.log(response);
+    if (response.status == 200){
+        getApiCall(data.title)
+    }
+  }
+
+  
+  async function getApiCall(data) {
+    console.log('inside api call');
+    console.log(data);
+    const response = await fetch(`https://mynotes12.herokuapp.com/?title=${data}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
+    if (response.status === 200) {
+        let data = await response.text();
+        console.log(data);
+    }
+    
+  }
+
