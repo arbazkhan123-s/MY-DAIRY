@@ -1,6 +1,0 @@
-PORT = 8000
-MONGODB_URL = `mongodb+srv://ArbazKhan:<password>@abz-cluster.d58vg.mongodb.net/?retryWrites=true&w=majority`
-DATABASE_NAME = note-app-dev
-COLLECTION = notes-data
-PASSWORD = Eagle%40143567
-NOTES_KEY = '25037802e1ab943fc38bbc9614e8b647'
